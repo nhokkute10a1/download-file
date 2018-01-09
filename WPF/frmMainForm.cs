@@ -32,6 +32,7 @@ namespace WPF
             }
         }
 
+
         #region[Open-File]
         private void CheckSumFile()
         {
@@ -103,5 +104,10 @@ namespace WPF
             }
         }
         #endregion
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            sw.Start();
+        }
     }
 }

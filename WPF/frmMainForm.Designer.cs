@@ -32,15 +32,16 @@
             this.txtResult = new System.Windows.Forms.TextBox();
             this.btnChooseFile = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.lbtientrinh = new System.Windows.Forms.Label();
+            this.labelSpeed = new System.Windows.Forms.Label();
+            this.labelPerc = new System.Windows.Forms.Label();
+            this.labelDownloaded = new System.Windows.Forms.Label();
+            this.progressBarDownload = new System.Windows.Forms.ProgressBar();
             this.label2 = new System.Windows.Forms.Label();
             this.btnDownload = new System.Windows.Forms.Button();
             this.txtUrlDownload = new System.Windows.Forms.TextBox();
-            this.progressBarDownload = new System.Windows.Forms.ProgressBar();
-            this.labelDownloaded = new System.Windows.Forms.Label();
-            this.labelPerc = new System.Windows.Forms.Label();
-            this.labelSpeed = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.lbtientrinh = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -92,6 +93,61 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Download File";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 222);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(74, 17);
+            this.label6.TabIndex = 55;
+            this.label6.Text = "Tốc độ tải::";
+            // 
+            // lbtientrinh
+            // 
+            this.lbtientrinh.AutoSize = true;
+            this.lbtientrinh.Location = new System.Drawing.Point(6, 196);
+            this.lbtientrinh.Name = "lbtientrinh";
+            this.lbtientrinh.Size = new System.Drawing.Size(84, 17);
+            this.lbtientrinh.TabIndex = 56;
+            this.lbtientrinh.Text = "Tiến trình tải:";
+            // 
+            // labelSpeed
+            // 
+            this.labelSpeed.AutoSize = true;
+            this.labelSpeed.ForeColor = System.Drawing.Color.Red;
+            this.labelSpeed.Location = new System.Drawing.Point(96, 222);
+            this.labelSpeed.Name = "labelSpeed";
+            this.labelSpeed.Size = new System.Drawing.Size(33, 17);
+            this.labelSpeed.TabIndex = 54;
+            this.labelSpeed.Text = "0 kb";
+            // 
+            // labelPerc
+            // 
+            this.labelPerc.AutoSize = true;
+            this.labelPerc.ForeColor = System.Drawing.Color.Red;
+            this.labelPerc.Location = new System.Drawing.Point(154, 169);
+            this.labelPerc.Name = "labelPerc";
+            this.labelPerc.Size = new System.Drawing.Size(28, 17);
+            this.labelPerc.TabIndex = 53;
+            this.labelPerc.Text = "0%";
+            // 
+            // labelDownloaded
+            // 
+            this.labelDownloaded.AutoSize = true;
+            this.labelDownloaded.ForeColor = System.Drawing.Color.Red;
+            this.labelDownloaded.Location = new System.Drawing.Point(96, 196);
+            this.labelDownloaded.Name = "labelDownloaded";
+            this.labelDownloaded.Size = new System.Drawing.Size(44, 17);
+            this.labelDownloaded.TabIndex = 52;
+            this.labelDownloaded.Text = "0/0 kb";
+            // 
+            // progressBarDownload
+            // 
+            this.progressBarDownload.Location = new System.Drawing.Point(9, 143);
+            this.progressBarDownload.Name = "progressBarDownload";
+            this.progressBarDownload.Size = new System.Drawing.Size(313, 23);
+            this.progressBarDownload.TabIndex = 3;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -121,66 +177,22 @@
             this.txtUrlDownload.TabIndex = 0;
             this.txtUrlDownload.Text = "dl5.vtcgame.vn:2008/CF_Full_1272.zip";
             // 
-            // progressBarDownload
+            // button1
             // 
-            this.progressBarDownload.Location = new System.Drawing.Point(9, 143);
-            this.progressBarDownload.Name = "progressBarDownload";
-            this.progressBarDownload.Size = new System.Drawing.Size(313, 23);
-            this.progressBarDownload.TabIndex = 3;
-            // 
-            // labelDownloaded
-            // 
-            this.labelDownloaded.AutoSize = true;
-            this.labelDownloaded.ForeColor = System.Drawing.Color.Red;
-            this.labelDownloaded.Location = new System.Drawing.Point(96, 196);
-            this.labelDownloaded.Name = "labelDownloaded";
-            this.labelDownloaded.Size = new System.Drawing.Size(44, 17);
-            this.labelDownloaded.TabIndex = 52;
-            this.labelDownloaded.Text = "0/0 kb";
-            // 
-            // labelPerc
-            // 
-            this.labelPerc.AutoSize = true;
-            this.labelPerc.ForeColor = System.Drawing.Color.Red;
-            this.labelPerc.Location = new System.Drawing.Point(154, 169);
-            this.labelPerc.Name = "labelPerc";
-            this.labelPerc.Size = new System.Drawing.Size(28, 17);
-            this.labelPerc.TabIndex = 53;
-            this.labelPerc.Text = "0%";
-            // 
-            // labelSpeed
-            // 
-            this.labelSpeed.AutoSize = true;
-            this.labelSpeed.ForeColor = System.Drawing.Color.Red;
-            this.labelSpeed.Location = new System.Drawing.Point(96, 222);
-            this.labelSpeed.Name = "labelSpeed";
-            this.labelSpeed.Size = new System.Drawing.Size(33, 17);
-            this.labelSpeed.TabIndex = 54;
-            this.labelSpeed.Text = "0 kb";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 222);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(74, 17);
-            this.label6.TabIndex = 55;
-            this.label6.Text = "Tốc độ tải::";
-            // 
-            // lbtientrinh
-            // 
-            this.lbtientrinh.AutoSize = true;
-            this.lbtientrinh.Location = new System.Drawing.Point(6, 196);
-            this.lbtientrinh.Name = "lbtientrinh";
-            this.lbtientrinh.Size = new System.Drawing.Size(84, 17);
-            this.lbtientrinh.TabIndex = 56;
-            this.lbtientrinh.Text = "Tiến trình tải:";
+            this.button1.Location = new System.Drawing.Point(117, 224);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FrmMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(687, 273);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -213,6 +225,7 @@
         private System.Windows.Forms.Label labelSpeed;
         private System.Windows.Forms.Label labelPerc;
         private System.Windows.Forms.Label labelDownloaded;
+        private System.Windows.Forms.Button button1;
     }
 }
 

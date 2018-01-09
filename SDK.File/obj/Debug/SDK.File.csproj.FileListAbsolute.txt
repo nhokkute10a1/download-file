@@ -4,3 +4,9 @@ F:\Web\MyProject\SDK\SDK.NET\SDK.File\obj\Debug\SDK.File.csproj.CoreCompileInput
 F:\Web\MyProject\SDK\SDK.NET\SDK.File\obj\Debug\SDK.File.dll
 F:\Web\MyProject\SDK\SDK.NET\SDK.File\obj\Debug\SDK.File.pdb
 F:\Web\MyProject\SDK\SDK.NET\SDK.File\obj\Debug\SDK.File.csprojResolveAssemblyReference.cache
+C:\Users\asus\Desktop\DownloadFileCheckSum\SDK.File\bin\Debug\SDK.File.dll
+C:\Users\asus\Desktop\DownloadFileCheckSum\SDK.File\bin\Debug\SDK.File.pdb
+C:\Users\asus\Desktop\DownloadFileCheckSum\SDK.File\obj\Debug\SDK.File.csprojResolveAssemblyReference.cache
+C:\Users\asus\Desktop\DownloadFileCheckSum\SDK.File\obj\Debug\SDK.File.csproj.CoreCompileInputs.cache
+C:\Users\asus\Desktop\DownloadFileCheckSum\SDK.File\obj\Debug\SDK.File.dll
+C:\Users\asus\Desktop\DownloadFileCheckSum\SDK.File\obj\Debug\SDK.File.pdb

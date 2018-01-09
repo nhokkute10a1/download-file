@@ -1,0 +1,8 @@
+C:\Users\asus\Desktop\DownloadFileCheckSum\SDK.File.IO\ConsoleAppDownloadFile\bin\Debug\ConsoleAppDownloadFile.exe
+C:\Users\asus\Desktop\DownloadFileCheckSum\SDK.File.IO\ConsoleAppDownloadFile\bin\Debug\ConsoleAppDownloadFile.pdb
+C:\Users\asus\Desktop\DownloadFileCheckSum\SDK.File.IO\ConsoleAppDownloadFile\obj\Debug\ConsoleAppDownloadFile.csprojResolveAssemblyReference.cache
+C:\Users\asus\Desktop\DownloadFileCheckSum\SDK.File.IO\ConsoleAppDownloadFile\obj\Debug\ConsoleAppDownloadFile.csproj.CoreCompileInputs.cache
+C:\Users\asus\Desktop\DownloadFileCheckSum\SDK.File.IO\ConsoleAppDownloadFile\obj\Debug\ConsoleAppDownloadFile.exe
+C:\Users\asus\Desktop\DownloadFileCheckSum\SDK.File.IO\ConsoleAppDownloadFile\obj\Debug\ConsoleAppDownloadFile.pdb
+C:\Users\asus\Desktop\DownloadFileCheckSum\SDK.File.IO\ConsoleAppDownloadFile\bin\Debug\FileDownloader.dll
+C:\Users\asus\Desktop\DownloadFileCheckSum\SDK.File.IO\ConsoleAppDownloadFile\bin\Debug\FileDownloader.pdb
