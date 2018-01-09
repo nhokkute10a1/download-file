@@ -1,0 +1,11 @@
+F:\Web\MyProject\SDK\SDK.NET\WPF\bin\Debug\WPF.exe
+F:\Web\MyProject\SDK\SDK.NET\WPF\bin\Debug\WPF.pdb
+F:\Web\MyProject\SDK\SDK.NET\WPF\bin\Debug\SDK.File.dll
+F:\Web\MyProject\SDK\SDK.NET\WPF\bin\Debug\SDK.File.pdb
+F:\Web\MyProject\SDK\SDK.NET\WPF\obj\Debug\WPF.csprojResolveAssemblyReference.cache
+F:\Web\MyProject\SDK\SDK.NET\WPF\obj\Debug\WPF.FrmMainForm.resources
+F:\Web\MyProject\SDK\SDK.NET\WPF\obj\Debug\WPF.Properties.Resources.resources
+F:\Web\MyProject\SDK\SDK.NET\WPF\obj\Debug\WPF.csproj.GenerateResource.Cache
+F:\Web\MyProject\SDK\SDK.NET\WPF\obj\Debug\WPF.csproj.CoreCompileInputs.cache
+F:\Web\MyProject\SDK\SDK.NET\WPF\obj\Debug\WPF.exe
+F:\Web\MyProject\SDK\SDK.NET\WPF\obj\Debug\WPF.pdb

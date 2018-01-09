@@ -1,0 +1,6 @@
+F:\Web\MyProject\SDK\SDK.NET\SDK.File\bin\Debug\SDK.File.dll
+F:\Web\MyProject\SDK\SDK.NET\SDK.File\bin\Debug\SDK.File.pdb
+F:\Web\MyProject\SDK\SDK.NET\SDK.File\obj\Debug\SDK.File.csproj.CoreCompileInputs.cache
+F:\Web\MyProject\SDK\SDK.NET\SDK.File\obj\Debug\SDK.File.dll
+F:\Web\MyProject\SDK\SDK.NET\SDK.File\obj\Debug\SDK.File.pdb
+F:\Web\MyProject\SDK\SDK.NET\SDK.File\obj\Debug\SDK.File.csprojResolveAssemblyReference.cache
