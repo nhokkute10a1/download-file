@@ -52,7 +52,7 @@ namespace ConsoleAppDownloadFile
     /*==Hướng dẫn cơ bản về Checksum==*/
     /*
         Tại thời điểm A là 13:00 với tệp tin A có mã check sum là 76cdb2bad9582d23c1f6f4d868218d6c
-        Sau khi tải lên máy chủ với tệp tin A với mã check sum là 76cdb2bad9582d23c1f6f4d868218d6c
+        Sau khi tải lên máy chủ tệp tin A với mã check sum là 76cdb2bad9582d23c1f6f4d868218d6c
         Sau một thời gian người dùng cần tải tệp tin A về máy
         Thì bạn phải kiểm tra mã CheckSum của tệp tin A có khớp với tệp mã CheckSum lúc đầu
         hay không,nếu đúng thì tệp tin không bị hư hại trong quá trình tải lên máy chủ
