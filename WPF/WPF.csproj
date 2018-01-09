@@ -42,11 +42,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmDownloadForm.cs">
+    <Compile Include="frmCheckSum.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmDownloadForm.Designer.cs">
-      <DependentUpon>frmDownloadForm.cs</DependentUpon>
+    <Compile Include="frmCheckSum.Designer.cs">
+      <DependentUpon>frmCheckSum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDownloadManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDownloadManager.Designer.cs">
+      <DependentUpon>frmDownloadManager.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMainForm.cs">
       <SubType>Form</SubType>
@@ -56,8 +62,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmDownloadForm.resx">
-      <DependentUpon>frmDownloadForm.cs</DependentUpon>
+    <EmbeddedResource Include="frmCheckSum.resx">
+      <DependentUpon>frmCheckSum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDownloadManager.resx">
+      <DependentUpon>frmDownloadManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMainForm.resx">
       <DependentUpon>frmMainForm.cs</DependentUpon>

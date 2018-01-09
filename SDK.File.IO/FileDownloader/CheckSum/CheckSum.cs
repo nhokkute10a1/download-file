@@ -7,9 +7,14 @@
 using System;
 using System.Linq;
 using System.Security.Cryptography;
+using System.IO;
+using System.Collections.Generic;
 
 namespace FileDownloader.CheckSum
 {
+    /// <summary>
+    /// CheckSum
+    /// </summary>
     public class CheckSum
     {
         private static CheckSum instance;
@@ -37,13 +42,20 @@ namespace FileDownloader.CheckSum
         /// <returns>String</returns>
         public string CreatedCheckSumMD5(string FileName)
         {
-            using (var md5 = MD5.Create())
+            try
             {
-                using (var stream = System.IO.File.OpenRead(FileName))
+                using (var md5 = MD5.Create())
                 {
-                    var hash = md5.ComputeHash(stream);
-                    return BitConverter.ToString(hash).Replace("-", "").ToLowerInvariant();
+                    using (var stream = File.OpenRead(FileName))
+                    {
+                        var hash = md5.ComputeHash(stream);
+                        return BitConverter.ToString(hash).Replace("-", "").ToLowerInvariant();
+                    }
                 }
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
             }
         }
         /// <summary>
@@ -55,7 +67,83 @@ namespace FileDownloader.CheckSum
         /// <returns>bool</returns>
         public bool CheckSumFile(string SourceFile, string DestFile)
         {
-            return CreatedCheckSumMD5(SourceFile).SequenceEqual(CreatedCheckSumMD5(DestFile)) ? true : false;
+            try
+            {
+                return CreatedCheckSumMD5(SourceFile).SequenceEqual(CreatedCheckSumMD5(DestFile)) ? true : false;
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
+        /// <summary>
+        /// Get List File ExtFiles = "*"
+        /// </summary>
+        /// <param name="Path"></param>
+        /// <param name="ExtFiles"></param>
+        /// <returns></returns>
+        public List<FileModel> GetListFiles(string Path, string ExtFiles)
+        {
+            try
+            {
+                var Dir = new DirectoryInfo(Path).GetFiles(ExtFiles);
+                var ListFiles = Dir.Select(x => new FileModel
+                {
+                    FileName = x.Name,
+                    Length = x.Length.ToFileSize(),
+                    FileMD5 = CreatedCheckSumMD5(x.FullName),
+                    Ext = x.Extension,
+                    Time = x.LastAccessTime
+                }).OrderBy(x => x.Length).ToList();
+                return ListFiles;
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+    }
+    /// <summary>
+    /// Convert Size
+    /// </summary>
+    static class MyExend
+    {
+        public static string ToFileSize(this int source)
+        {
+            return ToFileSize(Convert.ToInt64(source));
+        }
+        public static string ToFileSize(this long source)
+        {
+            const int byteConversion = 1024;
+            double bytes = Convert.ToDouble(source);
+
+            if (bytes >= Math.Pow(byteConversion, 3)) //GB Range
+            {
+                return string.Concat(Math.Round(bytes / Math.Pow(byteConversion, 3), 2), " GB");
+            }
+            else if (bytes >= Math.Pow(byteConversion, 2)) //MB Range
+            {
+                return string.Concat(Math.Round(bytes / Math.Pow(byteConversion, 2), 2), " MB");
+            }
+            else if (bytes >= byteConversion) //KB Range
+            {
+                return string.Concat(Math.Round(bytes / byteConversion, 2), " KB");
+            }
+            else //Bytes
+            {
+                return string.Concat(bytes, " Bytes");
+            }
+        }
+    }
+    /// <summary>
+    /// Property Files
+    /// </summary>
+    public sealed class FileModel
+    {
+        public string FileName { get; set; }
+        public string FileMD5 { get; set; }
+        public string Length { get; set; }
+        public string Ext { get; set; }
+        public DateTime Time { get; set; }
     }
 }

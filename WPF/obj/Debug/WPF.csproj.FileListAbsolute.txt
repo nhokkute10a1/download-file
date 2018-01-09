@@ -11,8 +11,6 @@ F:\Web\MyProject\SDK\SDK.NET\WPF\obj\Debug\WPF.exe
 F:\Web\MyProject\SDK\SDK.NET\WPF\obj\Debug\WPF.pdb
 C:\Users\asus\Desktop\DownloadFileCheckSum\WPF\bin\Debug\WPF.exe
 C:\Users\asus\Desktop\DownloadFileCheckSum\WPF\bin\Debug\WPF.pdb
-C:\Users\asus\Desktop\DownloadFileCheckSum\WPF\bin\Debug\SDK.File.dll
-C:\Users\asus\Desktop\DownloadFileCheckSum\WPF\bin\Debug\SDK.File.pdb
 C:\Users\asus\Desktop\DownloadFileCheckSum\WPF\obj\Debug\WPF.csprojResolveAssemblyReference.cache
 C:\Users\asus\Desktop\DownloadFileCheckSum\WPF\obj\Debug\WPF.FrmMainForm.resources
 C:\Users\asus\Desktop\DownloadFileCheckSum\WPF\obj\Debug\WPF.Properties.Resources.resources
@@ -20,4 +18,7 @@ C:\Users\asus\Desktop\DownloadFileCheckSum\WPF\obj\Debug\WPF.csproj.GenerateReso
 C:\Users\asus\Desktop\DownloadFileCheckSum\WPF\obj\Debug\WPF.csproj.CoreCompileInputs.cache
 C:\Users\asus\Desktop\DownloadFileCheckSum\WPF\obj\Debug\WPF.exe
 C:\Users\asus\Desktop\DownloadFileCheckSum\WPF\obj\Debug\WPF.pdb
-C:\Users\asus\Desktop\DownloadFileCheckSum\WPF\obj\Debug\WPF.frmDownloadForm.resources
+C:\Users\asus\Desktop\DownloadFileCheckSum\WPF\bin\Debug\FileDownloader.dll
+C:\Users\asus\Desktop\DownloadFileCheckSum\WPF\bin\Debug\FileDownloader.pdb
+C:\Users\asus\Desktop\DownloadFileCheckSum\WPF\obj\Debug\WPF.frmDownloadManager.resources
+C:\Users\asus\Desktop\DownloadFileCheckSum\WPF\obj\Debug\WPF.FrmCheckSum.resources
