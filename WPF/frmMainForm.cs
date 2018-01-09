@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Net;
 using System.Windows.Forms;
-using SDK.File;
+using FileDownloader.CheckSum;
 namespace WPF
 {
     public partial class FrmMainForm : Form
@@ -45,7 +45,7 @@ namespace WPF
                     Dialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
                     if (Dialog.ShowDialog() == DialogResult.OK)
                     {
-                        txtResult.Text = SDKFile.CheckSumMD5(Dialog.FileName);
+                        txtResult.Text = CheckSum.Instance.CreatedCheckSumMD5(Dialog.FileName);
                     }
                 }
             }
@@ -104,10 +104,5 @@ namespace WPF
             }
         }
         #endregion
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            sw.Start();
-        }
     }
 }

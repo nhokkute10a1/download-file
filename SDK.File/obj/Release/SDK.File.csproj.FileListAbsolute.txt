@@ -1,6 +1,0 @@
-F:\Web\MyProject\SDK\SDK.NET\SDK.File\bin\Release\SDK.File.dll
-F:\Web\MyProject\SDK\SDK.NET\SDK.File\bin\Release\SDK.File.pdb
-F:\Web\MyProject\SDK\SDK.NET\SDK.File\obj\Release\SDK.File.csprojResolveAssemblyReference.cache
-F:\Web\MyProject\SDK\SDK.NET\SDK.File\obj\Release\SDK.File.csproj.CoreCompileInputs.cache
-F:\Web\MyProject\SDK\SDK.NET\SDK.File\obj\Release\SDK.File.dll
-F:\Web\MyProject\SDK\SDK.NET\SDK.File\obj\Release\SDK.File.pdb

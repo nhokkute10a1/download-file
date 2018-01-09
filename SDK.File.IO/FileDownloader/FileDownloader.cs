@@ -1,8 +1,8 @@
-﻿//----------------------------------------------------------------------------------------------------
-// <copyright company="Avira Operations GmbH & Co. KG and its licensors">
-// © 2016 Avira Operations GmbH & Co. KG and its licensors.  All rights reserved.
-// </copyright>
-//----------------------------------------------------------------------------------------------------
+﻿/*
+     Framework              : using Framework 3.5
+     System Libary          : System,System.ComponentModel,System.IO,System.Net,System.Threading,FileDownloader.Logging
+     Design Pattern Libary  : None
+ */
 
 using System;
 using System.ComponentModel;

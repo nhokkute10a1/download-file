@@ -82,9 +82,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SDK.File\SDK.File.csproj">
-      <Project>{c028c2f2-a56e-4ae7-8ac5-990686e3e16f}</Project>
-      <Name>SDK.File</Name>
+    <ProjectReference Include="..\SDK.File.IO\FileDownloader\FileDownloader.csproj">
+      <Project>{cd963676-6164-4d87-b3bf-fa2fb6cc5678}</Project>
+      <Name>FileDownloader</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

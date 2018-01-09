@@ -38,6 +38,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CheckSum\CheckSum.cs" />
     <Compile Include="CompletedState.cs" />
     <Compile Include="DownloadFileCompletedArgs.cs" />
     <Compile Include="DownloadFileProgressChangedArgs.cs" />

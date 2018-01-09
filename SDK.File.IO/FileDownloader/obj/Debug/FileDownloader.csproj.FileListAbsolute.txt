@@ -3,3 +3,4 @@ C:\Users\asus\Desktop\DownloadFileCheckSum\SDK.File.IO\FileDownloader\bin\Debug\
 C:\Users\asus\Desktop\DownloadFileCheckSum\SDK.File.IO\FileDownloader\obj\Debug\FileDownloader.csproj.CoreCompileInputs.cache
 C:\Users\asus\Desktop\DownloadFileCheckSum\SDK.File.IO\FileDownloader\obj\Debug\FileDownloader.dll
 C:\Users\asus\Desktop\DownloadFileCheckSum\SDK.File.IO\FileDownloader\obj\Debug\FileDownloader.pdb
+C:\Users\asus\Desktop\DownloadFileCheckSum\SDK.File.IO\FileDownloader\obj\Debug\FileDownloader.csprojResolveAssemblyReference.cache
