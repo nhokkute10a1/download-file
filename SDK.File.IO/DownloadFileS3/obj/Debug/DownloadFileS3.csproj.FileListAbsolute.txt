@@ -2,8 +2,6 @@ C:\Users\asus\Desktop\DownloadFileCheckSum\SDK.File.IO\DownloadFileS3\bin\Debug\
 C:\Users\asus\Desktop\DownloadFileCheckSum\SDK.File.IO\DownloadFileS3\bin\Debug\DownloadFileS3.pdb
 C:\Users\asus\Desktop\DownloadFileCheckSum\SDK.File.IO\DownloadFileS3\bin\Debug\AWSSDK.Core.dll
 C:\Users\asus\Desktop\DownloadFileCheckSum\SDK.File.IO\DownloadFileS3\bin\Debug\AWSSDK.S3.dll
-C:\Users\asus\Desktop\DownloadFileCheckSum\SDK.File.IO\DownloadFileS3\bin\Debug\FileDownloader.dll
-C:\Users\asus\Desktop\DownloadFileCheckSum\SDK.File.IO\DownloadFileS3\bin\Debug\FileDownloader.pdb
 C:\Users\asus\Desktop\DownloadFileCheckSum\SDK.File.IO\DownloadFileS3\bin\Debug\AWSSDK.Core.pdb
 C:\Users\asus\Desktop\DownloadFileCheckSum\SDK.File.IO\DownloadFileS3\bin\Debug\AWSSDK.Core.xml
 C:\Users\asus\Desktop\DownloadFileCheckSum\SDK.File.IO\DownloadFileS3\bin\Debug\AWSSDK.S3.pdb
@@ -12,3 +10,5 @@ C:\Users\asus\Desktop\DownloadFileCheckSum\SDK.File.IO\DownloadFileS3\obj\Debug\
 C:\Users\asus\Desktop\DownloadFileCheckSum\SDK.File.IO\DownloadFileS3\obj\Debug\DownloadFileS3.csproj.CoreCompileInputs.cache
 C:\Users\asus\Desktop\DownloadFileCheckSum\SDK.File.IO\DownloadFileS3\obj\Debug\DownloadFileS3.exe
 C:\Users\asus\Desktop\DownloadFileCheckSum\SDK.File.IO\DownloadFileS3\obj\Debug\DownloadFileS3.pdb
+C:\Users\asus\Desktop\DownloadFileCheckSum\SDK.File.IO\DownloadFileS3\bin\Debug\DownloadManager.dll
+C:\Users\asus\Desktop\DownloadFileCheckSum\SDK.File.IO\DownloadFileS3\bin\Debug\DownloadManager.pdb

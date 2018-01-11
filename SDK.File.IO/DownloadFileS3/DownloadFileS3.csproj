@@ -49,16 +49,16 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FileDownloader\FileDownloader.csproj">
-      <Project>{cd963676-6164-4d87-b3bf-fa2fb6cc5678}</Project>
-      <Name>FileDownloader</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\packages\AWSSDK.S3.3.3.16.2\analyzers\dotnet\cs\AWSSDK.S3.CodeAnalysis.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DownloadManager\DownloadManager.csproj">
+      <Project>{1b8e0b11-0b55-4288-9674-e1b9752b193f}</Project>
+      <Name>DownloadManager</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
