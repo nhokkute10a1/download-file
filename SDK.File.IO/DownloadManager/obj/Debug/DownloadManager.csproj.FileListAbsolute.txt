@@ -1,0 +1,6 @@
+C:\Users\asus\Desktop\DownloadFileCheckSum\SDK.File.IO\DownloadManager\obj\Debug\DownloadManager.csprojResolveAssemblyReference.cache
+C:\Users\asus\Desktop\DownloadFileCheckSum\SDK.File.IO\DownloadManager\obj\Debug\DownloadManager.csproj.CoreCompileInputs.cache
+C:\Users\asus\Desktop\DownloadFileCheckSum\SDK.File.IO\DownloadManager\bin\Debug\DownloadManager.dll
+C:\Users\asus\Desktop\DownloadFileCheckSum\SDK.File.IO\DownloadManager\bin\Debug\DownloadManager.pdb
+C:\Users\asus\Desktop\DownloadFileCheckSum\SDK.File.IO\DownloadManager\obj\Debug\DownloadManager.dll
+C:\Users\asus\Desktop\DownloadFileCheckSum\SDK.File.IO\DownloadManager\obj\Debug\DownloadManager.pdb

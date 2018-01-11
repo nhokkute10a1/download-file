@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Security.Cryptography;
 using System.Threading;
 using FileDownloader.CheckSum;
 namespace ConsoleAppDownloadFile
@@ -9,12 +10,20 @@ namespace ConsoleAppDownloadFile
     {
         private static List<string> list = new List<string>();
         //Tạo danh sách CheckSum
-        private static List<string> listCheck = new List<string> { "76cdb2bad9582d23c1f6f4d868218d6c", "ece383eba489e2e198b309e5ef78ff05" };
+        private static List<string> listCheck = new List<string> { "eecebf71f41ae5c2f9db89c81e7962e4", "ece383eba489e2e198b309e5ef78ff05" };
         private static string Path = AppDomain.CurrentDomain.BaseDirectory + @"\File\";//Lấy thư mục hiện tại
         static void Main(string[] args)
         {
-            var T = new Thread(new ThreadStart(CheckSumDemo));
-            T.Start();
+            ////var T = new Thread(new ThreadStart(CheckSumDemo));
+            ////T.Start();
+            //var File = @"C:\Users\asus\Desktop\DownloadFileCheckSum\SDK.File.IO\ConsoleAppDownloadFile\bin\Debug\File\20172905Bw-server-real-time-app-zplus.zip";
+            //CheckSum.Instance.CreatedCheckSumMD5(File);
+            ////var etag = HashOf(File, 7757625);
+            //Console.WriteLine(CheckSum.Instance.CreatedCheckSumMD5(File));
+            //Console.ReadLine();
+            var FileName = "https://s3-us-west-1.amazonaws.com/elasticbeanstalk-us-west-1-833434519629/20172905Bw-server-real-time-app-zplus.zip";
+            Console.WriteLine(CheckSum.Instance.CreatedCheckSumMD5Online(FileName));
+            Console.ReadLine();
         }
         private static void CheckSumDemo()
         {
@@ -47,6 +56,50 @@ namespace ConsoleAppDownloadFile
             Console.WriteLine();
             Console.WriteLine("Total File Exits [[{0}]]", count);
             Console.ReadLine();
+        }
+
+        private static string HashOf(string filename, int chunkSizeInMb)
+        {
+            string returnMD5 = string.Empty;
+            int chunkSize = chunkSizeInMb * 1024 * 1024;
+
+            using (var crypto = new MD5CryptoServiceProvider())
+            {
+                int hashLength = crypto.HashSize / 8;
+
+                using (var stream = File.OpenRead(filename))
+                {
+                    if (stream.Length > chunkSize)
+                    {
+                        int chunkCount = (int)Math.Ceiling((double)stream.Length / (double)chunkSize);
+
+                        byte[] hash = new byte[chunkCount * hashLength];
+                        Stream hashStream = new MemoryStream(hash);
+
+                        long nByteLeftToRead = stream.Length;
+                        while (nByteLeftToRead > 0)
+                        {
+                            int nByteCurrentRead = (int)Math.Min(nByteLeftToRead, chunkSize);
+                            byte[] buffer = new byte[nByteCurrentRead];
+                            nByteLeftToRead -= stream.Read(buffer, 0, nByteCurrentRead);
+
+                            byte[] tmpHash = crypto.ComputeHash(buffer);
+
+                            hashStream.Write(tmpHash, 0, hashLength);
+
+                        }
+
+                        returnMD5 = BitConverter.ToString(crypto.ComputeHash(hash)).Replace("-", string.Empty).ToLower() + "-" + chunkCount;
+                    }
+                    else
+                    {
+                        returnMD5 = BitConverter.ToString(crypto.ComputeHash(stream)).Replace("-", string.Empty).ToLower();
+
+                    }
+                    stream.Close();
+                }
+            }
+            return returnMD5;
         }
     }
     /*==Hướng dẫn cơ bản về Checksum==*/

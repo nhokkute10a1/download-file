@@ -15,7 +15,7 @@ namespace WPF
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmCheckSum());
+            Application.Run(new FrmDownload());
         }
     }
 }

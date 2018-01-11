@@ -59,6 +59,32 @@ namespace FileDownloader.CheckSum
             }
         }
         /// <summary>
+        /// CheckSum Online
+        /// </summary>
+        /// <param name="Uri"></param>
+        /// <returns></returns>
+        public string CreatedCheckSumMD5Online(string Uri)
+        {
+            try
+            {
+                using (var wc = new System.Net.WebClient())
+                {
+                    using (var md5 = MD5.Create())
+                    {
+                        using (var stream = wc.OpenRead(Uri))
+                        {
+                            var hash = md5.ComputeHash(stream);
+                            return BitConverter.ToString(hash).Replace("-", "").ToLowerInvariant();
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+        /// <summary>
         /// Compare File Origin File with Destination File
         /// CheckSumFile
         /// </summary>

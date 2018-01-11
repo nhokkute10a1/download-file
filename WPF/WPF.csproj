@@ -48,6 +48,12 @@
     <Compile Include="frmCheckSum.Designer.cs">
       <DependentUpon>frmCheckSum.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDownload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDownload.Designer.cs">
+      <DependentUpon>frmDownload.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDownloadManager.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +70,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmCheckSum.resx">
       <DependentUpon>frmCheckSum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDownload.resx">
+      <DependentUpon>frmDownload.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDownloadManager.resx">
       <DependentUpon>frmDownloadManager.cs</DependentUpon>
@@ -91,6 +100,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\SDK.File.IO\DownloadManager\DownloadManager.csproj">
+      <Project>{1b8e0b11-0b55-4288-9674-e1b9752b193f}</Project>
+      <Name>DownloadManager</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SDK.File.IO\FileDownloader\FileDownloader.csproj">
       <Project>{cd963676-6164-4d87-b3bf-fa2fb6cc5678}</Project>
       <Name>FileDownloader</Name>
